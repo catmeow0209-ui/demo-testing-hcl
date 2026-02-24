@@ -1,4 +1,4 @@
 resource "aws_instance" "demo-instance" {
-  ami           = "ami-0c55b159cbfafe1f0"
-  instance_type = "t2.micro"
+  ami           = var.ami_id
+  instance_type = var.instance_type
 }
